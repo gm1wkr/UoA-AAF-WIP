@@ -18,12 +18,12 @@
     min-height: 100%;
 
     & .panel{
-        background-color: #f0f4f7;
+        background-color: #ffffff;
         border-left: 1pt solid #e0ecf3;
         border-right: 1pt solid #e0ecf3;
         margin: 0rem  auto;
         padding: 2rem 1rem;
-        max-width: 79ch;
+        max-width: 67ch;
         min-height: 100%;
     }
 }

@@ -15,10 +15,18 @@
   </footer>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
     footer{
         background-color: #f1f1f1;
-        font-size: .9rem;
-        padding: 2rem 0;
+        font-size: 80%;
+        padding: 1rem 0;
+        text-align: center;
+
+        & p{
+            margin-bottom: 1rem;
+        }
+        & p:last-of-type{
+            margin: 0;
+        }
     }
 </style>

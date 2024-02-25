@@ -1,42 +1,21 @@
 <script setup>
-import Button from "./components/Button.vue";
+import Home from './pages/Home.vue';
+import Form from './pages/Form.vue';
 import Header from "./components/Header.vue";
 import Footer from "./components/Footer.vue";
-import PanelContainer from "./components/PanelContainer.vue";
 </script>
 
 <template>
   <Header />
 
   <main>
-    <PanelContainer>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-        laboriosam tenetur nihil tempore est natus quaerat repudiandae debitis!
-        Quaerat vero autem modi totam hic fugit. Esse quos ipsum rem
-        repudiandae.
-      </p>
-      <p>
-        <Button :disbaled="disabled">Next</Button>
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-        laboriosam tenetur nihil tempore est natus quaerat repudiandae debitis!
-        Quaerat vero autem modi totam hic fugit. Esse quos ipsum rem
-        repudiandae.
-      </p>      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-        laboriosam tenetur nihil tempore est natus quaerat repudiandae debitis!
-        Quaerat vero autem modi totam hic fugit. Esse quos ipsum rem
-        repudiandae.
-      </p>      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-        laboriosam tenetur nihil tempore est natus quaerat repudiandae debitis!
-        Quaerat vero autem modi totam hic fugit. Esse quos ipsum rem
-        repudiandae.
-      </p>
+    <nav>
+        <router-link to="/">Home </router-link> 
+        <router-link to="/form">Form</router-link>
+    </nav>
 
-    </PanelContainer>
+    <router-view></router-view>
+
   </main>
 
   <Footer />

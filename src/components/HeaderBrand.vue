@@ -3,16 +3,14 @@
 </script>
     
 <template>
-    <div class="container">
-        <div class="row">
-            <div class="header-brand">
-                <HeaderLogo/>
-                <h1>
-                    Apply for Accommodation
-                </h1>
-            </div>
-        </div>
+
+    <div class="header-brand">
+        <HeaderLogo/>
+        <h1>
+            Apply for Accommodation
+        </h1>
     </div>
+
 </template>
 
 <style lang="scss">

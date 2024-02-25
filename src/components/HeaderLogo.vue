@@ -11,8 +11,12 @@
 
 <style lang="scss">
 .logo-wrapper {
-    background-color: fefbae;
+  background-color: fefbae;
   align-self: center;
   object-fit: contain;
+
+  & img{
+    max-height: 3rem;
+  }
 }
 </style>
