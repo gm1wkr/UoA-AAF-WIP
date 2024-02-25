@@ -18,10 +18,11 @@
 
 <style lang="scss">
     .form-container{
-        background-color: $background-color;
+        
         // display: flex;
         // align-items: flex-start;
         min-height: 100%;
-        max-width: 100%;
+        min-height: 56vh;
+        padding: 0;
     }
 </style>

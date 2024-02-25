@@ -22,7 +22,7 @@
         border-left: 1pt solid #e0ecf3;
         border-right: 1pt solid #e0ecf3;
         margin: 0rem  auto;
-        padding: 2rem 1rem;
+        padding: 1.3rem 1rem;
         max-width: 67ch;
         min-height: 100%;
     }

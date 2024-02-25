@@ -15,7 +15,7 @@
         color: #fff;
         font-weight: bold;
         margin: auto;
-        min-width: 32ch;
+        width: 80%;
         padding: .2rem .7rem;
 
     }
