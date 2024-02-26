@@ -25,7 +25,7 @@ const navigateToHome = () => {
     <ul>
         <li>Student ID</li>
         <li>A Name</li>
-        <li>Your Email adrress</li>
+        <li>Your Email address</li>
     </ul>
     
     <p>

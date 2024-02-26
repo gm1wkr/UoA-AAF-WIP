@@ -71,7 +71,7 @@ onMounted(async () => {
         id="studentType"
         name="studentType"
       >
-        <optgroup label="Level of Study">
+        <optgroup label="">
           <option value="0" disabled>Please Select</option>
           <option value="new-undergraduate">New Undergraduate</option>
           <option value="post-graduate">Post-graduate</option>
