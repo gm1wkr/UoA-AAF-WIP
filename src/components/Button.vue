@@ -14,9 +14,8 @@
         border-radius: .4rem;
         color: #fff;
         font-weight: bold;
-        margin: auto;
-        width: 80%;
-        padding: .2rem .7rem;
+        width: auto;
+        padding: .3rem .7rem;
 
     }
     button:hover{

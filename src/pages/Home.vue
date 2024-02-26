@@ -33,14 +33,26 @@ const navigateToHome = () => {
         <a href="tel: 01224 555555">01224 555555</a>.
     </p>
     
-    <Button @click="navigateToHome">Start Application</Button>
+    <div class="control">
+        <Button @click="navigateToHome">Start Application</Button>
+    </div>
 
 
   </PanelContainer>
 </template>
 
 <style lang="scss">
-    p{
-        margin: 1rem .3rem;
+    .control {
+        
+        display: flex;
+        justify-content: center;
+
+        & Button {
+            font-size: 1.2rem;
+            margin: 1.6rem auto 1rem auto;
+            width: 80%;
+        }
     }
+
+
 </style>
