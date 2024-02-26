@@ -1,0 +1,29 @@
+{
+    "status": "success",
+    "data" : {
+        "sessions": [
+            "2024-25",
+            "2025-26"
+        ],
+        "available_for" : {
+            "Erasmus": [
+                "2024-25"
+            ],
+            "PGDE": [
+                "2024-25"
+            ],
+            "under-graduate": [
+                "2024-25",
+                "2025-26"
+            ],
+            "post-graduate": [
+                "2024-25",
+                "2025-26"
+            ],
+            "study-abroad-exchange": [
+                "2024-25",
+                "2025-26"
+            ]
+        }
+    }
+  }
