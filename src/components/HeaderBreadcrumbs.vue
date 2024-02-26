@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <div class="">
+  <div class="breadcrumbs">
     <ol>
       <li><a href="#">University Home</a></li>
       <li><a href="#">Apply For Accomodation</a></li>
@@ -12,15 +12,15 @@
 
 <style lang="scss" scoped>
 .breadcrumbs {
-  background-color: #95dafd;
-  padding: 0.3rem 0;
+    background-color: #edeff1;
+    border-top: 1pt solid #d4dfe6;
+    padding: 0.6rem 0 .6rem 1rem;
 }
 
 ol {
     display: flex;
-    font-size: 90%;
+    font-size: 86%;
     padding: 0;
-    padding: 1rem;
 
   li {
     display: flex;

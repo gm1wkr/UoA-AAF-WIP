@@ -35,9 +35,11 @@ const submitForm = () => {
 onMounted(async () => {
   try {
     const response = await axios.get(
-      "https://jsonplaceholder.typicode.com/todos/2"
+      "http://localhost:3000/data"
     );
     data.value = response.data;
+    console.log("BACKEND:", data.value.sessions);
+    console.log("BACKEND:", data.value.available_for);
   } catch (error) {
     console.error("Failed to fetch data:", error);
   }
@@ -46,11 +48,15 @@ onMounted(async () => {
 
 <template>
   <p class="info">
-    Please fill out the form below. If you need any help please contact someone.
+    Please fill out the form below. If you need any help please contact someone at info here.
+  </p>
+
+  <p>
+    npx json-server --watch db.json
   </p>
 
   <div v-if="data">
-    <p class="dataTest">Data from placeholer API, data available to the form<br>{{ data }}</p>
+    <p class="dataTest">Mock data from backend<br>{{ data }}</p>
   </div>
   <div v-else>
     <p class="dataTest">Loading...</p>
@@ -102,7 +108,7 @@ onMounted(async () => {
     </div>
   </form>
 
-  <div class="no-accom-available" v-if="noAccomAvailable">
+  <div class="no-accom-available shadow" v-if="noAccomAvailable">
     <h3>Sorry!</h3>
     <p>
       Sorry there is no accomodation available for {{ levelStudy }} students for
@@ -114,8 +120,8 @@ onMounted(async () => {
 
 <style lang="scss" scoped>
 .no-accom-available {
-  background-color: #fff4f4;
-  border: 1px solid #dd0000;
+  background-color: #fff3f3;
+  border: 1px solid #880707;
   margin-top: 2rem;
   padding: 1rem;
 
@@ -143,7 +149,7 @@ onMounted(async () => {
   width: 100%;
 
   .form-control {
-    background-color: #f7f8fc;
+    background-color: #f5f5f5;
     border-bottom: 1px solid rgba(230, 230, 230, 0.89);
     display: flex;
     flex-direction: column;
@@ -163,7 +169,7 @@ onMounted(async () => {
     & input,
     select,
     button {
-      font-size: 1.14rem;
+      font-size: 1.04rem;
       padding: 0.3rem;
       border: 1px solid #dddddd;
       border-radius: 4px;
@@ -171,12 +177,12 @@ onMounted(async () => {
       //   flex: 1;
     }
   }
-  .form-control:nth-child(even) {
-    background-color: #f1f2f8;
+  .form-control:nth-child(odd) {
+    background-color: #F1F1F1;
   }
 
-  .form-control:hover {
-    background-color: #fff;
+  .form-control:hover, form-control:focus {
+    background-color: #ebebeb;
   }
 }
 </style>

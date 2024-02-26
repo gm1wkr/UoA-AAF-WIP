@@ -7,15 +7,15 @@
 <template>
 <header>
     <HeaderBrand />
-    <HeaderBreadcrumbs class="headerBreadcrumbs"/>
 </header>
+<HeaderBreadcrumbs class="headerBreadcrumbs"/>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
     header{
-        background-color: #f0f4f7;
-        font-size: .9rem;
-        padding-top: 1rem;
+        background-color: #f7f7f7;
+        font-size: .86rem;
+        padding: 1rem;
         
     }
 </style>
