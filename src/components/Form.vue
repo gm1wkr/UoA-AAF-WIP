@@ -47,8 +47,6 @@ onMounted(async () => {
   try {
     const response = await axios.get("http://localhost:3000/data");
     data.value = response.data;
-    console.log("BACKEND:", data.value.sessions);
-    console.log("BACKEND:", data.value.available_for);
   } catch (error) {
     console.error("Failed to fetch data:", error);
   }
